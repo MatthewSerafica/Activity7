@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Internal;
+using System;
 
 namespace GroupX
 {
@@ -9,6 +10,7 @@ namespace GroupX
             Console.WriteLine("1. Make it Divisible by 25");
             Console.WriteLine("2. Pizza Force");
             Console.WriteLine("3. Watermelon");
+            Console.WriteLine("4. Pineapple");
             int x = Convert.ToInt32(Console.ReadLine());
             switch (x)
             {
@@ -21,10 +23,18 @@ namespace GroupX
                 case 3:
                     Watermelon();
                     break;
+                case 4:
+                    Pineapple();
+                    break;
                 default:
                     Console.WriteLine("Error");
                     break;
             }
+        }
+
+        private static void Pineapple()
+        {
+            Console.WriteLine("Pineapple!");
         }
 
         public static void Divisible() 
